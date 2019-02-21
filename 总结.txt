@@ -1,0 +1,44 @@
+1. chromedriver安装
+	操作系统 chrome浏览器 chromedriver 三者要版本相符
+
+2. selenium使用
+	from selenium import webdriver
+	option = webdriver.ChromeOptions()
+	option.add_argument('--headless') 
+	option.add_argument('--disable-gpu')
+	driver = webdriver.Chrome(chromedriver_path,
+							  chrome_options=option)
+	driver.get(url)
+	# driver.close() # 关闭当前标签页
+	driver.quit() # 一定最后无论怎样都要关闭浏览器！！！
+
+3. driver对象常用的属性和方法
+	driver.save_screenshot('xxx.png')
+	driver.title # 当前页标题
+	driver.current_url
+	driver.get_cookies() # cookies list
+	# {cookie['name']:cookie['value'] for cookie in driver.get_cookies()}
+	driver.delete_cookie(cookie_name)
+	driver.delete_all_cookies()
+	driver.execute_script(js_str)
+	driver.page_source # 网页源代码
+
+4. switch_to切换
+	# 根据标签页的顺序切换到标签页的默认位置
+	driver.switch_to.window(driver.handles[0])
+	# 切换到已经定位到的frame标签中
+	driver.switch_to.frame(frame_element)
+
+5. selenium定位方法
+	driver.find_element(s)_by_id
+							 _class_name
+							 _xpath
+							 _link_text
+							 _partial_link_text
+							 _tag_name
+
+6. 提取的方式
+	提取文本内容
+		element.text
+	提取属性的值
+		element.get_attribute('属性名')

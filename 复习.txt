@@ -1,0 +1,39 @@
+1. 多线程
+	t = threading.Thread(target=func, args=(x,))
+	t.setDaemon(True) # 守护线程
+	t.start()
+
+2. 关于Queue队列
+	queue.Queue
+	multiprocessing.JoinableQueue
+	q = Queue(maxsize)
+	q.qsize()
+	q.put_nowait(i)
+	q.put(i, [False])
+	q.get_nowait()
+	q.get([False])
+	q.join()
+		# 阻塞调用q.join()的当前进程或线程，直到q队列的计数为0
+		# put动作成功时，计数+1
+		# q.task_done()会让计数-1
+	q.task_done()
+
+3. 多进程
+	p = multiprocessing.Process(target=func, args=(x,))
+	p.daemon = True # 守护进程
+	p.start()
+
+4. 线程池
+	pool = multiprocessing.dummpy.Pool(n) # n默认os.cpu_count() or 1
+	pool.apply_async(func, callback)
+	pool.close()
+	# callback指定的回调函数必须接收func的返回值作为参数*args
+
+5. 协程池
+	gevent.monkey.patch_all()
+	pool = gevent.pool.Pool(n) # n默认为1 
+	pool.apply_async(func, callback)
+	# 协程池没有close方法
+	# callback指定的回调函数必须接收func的返回值作为参数*args
+	# 线程是cpu调度的最小单位
+	# 所以在使用协程的时候，要在主进程合适的位置sleep，让cpu能够执行协程任务

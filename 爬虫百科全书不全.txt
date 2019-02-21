@@ -1,0 +1,50 @@
+1. requests抓取视频（多线程，无锁写文件）
+2. pyquery模块
+3. bs4解析html、xml
+4. py3.5+ async异步爬虫
+5. aiohttp模块
+6. selenium新进程调用假死chromedriver进程
+7. selenium清除假死chromedriver进程
+8. 多chromedriver同时运行
+9. selenium滑动、拖拽（AC模块）
+10. selenium录制生成python脚本
+11. pyvirtualdisplay启用driver无界面模式
+12. pywin32模块使用解决极验3.0滑动、点击、拼图
+13. pyautogui模块使用解决极验3.0滑动、点击、拼图
+14. 通过appium抓取app数据以及无界面服务器部署解决方案
+15. appium+mitmproxy抓取app流程数据
+16. wspy_dissector模块
+17. rabbitmq交互
+18. kafka交互
+19. zookeeper以及相关模块
+20. hbase交互
+21. hadoop以及hdfs搭建
+22. spark使用
+23. grpc、thrift、pickle模块
+24. kibana
+25. quark
+26. tensorflow识别图片
+27. opencv识别图片
+28. 调用腾讯产品中的接口识图
+29. pyv8环境搭建执行js
+30. elk
+31. jenkins与git/svn
+32. sentry8
+33. gerapy与webssh
+34. 跨节点多爬虫系统，负载均衡，任务调度，状态展示，动态部署
+
+
+_____以上为技术点/栈
+下边是经常会爬的网站
+
+1. 国家企业公示网、天眼查、企查查、启信宝
+2. 国家裁判文书网
+3. 中国物品编码中心网站
+4. 12306购票
+5. 授权用户个人支付宝、淘宝、京东等交易流水详情
+6. 授权用户个人微信钱包流水
+7. 淘宝、京东等商品信息抓取
+8. 授权用户通讯信息抓取
+9. 授权用户网银流水抓取
+10. 失信人被执行人
+11. 抖音、微博、知乎
