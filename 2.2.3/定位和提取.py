@@ -4,7 +4,7 @@
 import time
 from selenium import webdriver
 
-driver = webdriver.Chrome(executable_path='../chromedriver')
+driver = webdriver.Chrome('/home/worker/Desktop/driver/chromedriver')
 
 driver.get('https://www.douban.com/')
 

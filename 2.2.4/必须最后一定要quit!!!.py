@@ -4,7 +4,7 @@
 import traceback
 from selenium import webdriver
 
-driver = webdriver.Chrome(executable_path='../chromedriver')
+driver = webdriver.Chrome(executable_path='/home/worker/Desktop/driver/chromedriver')
 driver.get("https://www.baidu.com")
 
 try:

@@ -4,7 +4,7 @@
 from selenium import webdriver
 
 # 实例化driver对象
-driver = webdriver.Chrome('../chromedriver')
+driver = webdriver.Chrome('/home/worker/Desktop/driver/chromedriver')
 # driver = webdriver.PhantomJS('/home/worker/Desktop/driver/phantomjs')
 
 # 通过driver调用chromedriver,通过chromedriver去调用操作系统具有的chrome浏览器内核

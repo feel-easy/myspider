@@ -3,7 +3,7 @@
 
 from selenium import webdriver
 
-driver = webdriver.Chrome('./chromedriver')
+driver = webdriver.Chrome('/home/worker/Desktop/driver/chromedriver')
 
 driver.get('http://www.baidu.com')
 

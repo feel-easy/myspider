@@ -1,0 +1,4 @@
+six==1.11.0
+requests>=2.20.1
+lxml
+w3lib

@@ -4,7 +4,7 @@
 import time
 from selenium import webdriver
 
-driver = webdriver.Chrome(executable_path='../chromedriver')
+driver = webdriver.Chrome(executable_path='/home/worker/Desktop/driver/chromedriver')
 driver.get("https://mail.qq.com")
 
 """切入frame标签"""
